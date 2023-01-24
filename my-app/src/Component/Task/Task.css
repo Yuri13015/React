@@ -6,4 +6,52 @@
     justify-content: center;
     align-items: center;
     height: 10vh;
+    font-size: 1.2rem;
+    background: rgb(23,23,23);
+    color: aliceblue;
+    margin: 10px 0;
+    padding: 20px 30px;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s;
+    z-index: 5;
+}
+
+.list::before{
+    content:'' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: violet;
+    transition: all.4s;
+    z-index: -1;
+
+}
+
+.list:hover::before{
+    width: 100%;
+}
+
+.list:nth-child(1)::before{
+    background: #4285f4;
+}
+
+.list:nth-child(2)::before{
+    background: #b12cb1;
+}
+
+.list:nth-child(3)::before{
+    background: #d45f5f;
+}
+
+@media  screen and (max-width: 500px){
+    .list{
+        flex-direction: column;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 170px;
+    }
+    
 }

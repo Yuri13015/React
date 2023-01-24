@@ -1,0 +1,13 @@
+Créez une application React:  
+
+ Qui permet de gérer ses dépenses 
+
+Qui permet d’ajouter, supprimet et modifier des dépenses  
+
+Qui communique avec une API 
+
+Qui permet de naviguer sur plusieurs pages 
+
+Utiliser un service backend pour la partie authentification et base de données 
+
+Utiliser des modules CSS pour le style 

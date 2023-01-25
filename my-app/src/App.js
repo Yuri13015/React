@@ -1,8 +1,7 @@
 import './App.css';
 import Navbar from './Component/Navbar/Navbar';
 import Task from './Component/Task/Task';
-import TodoForm from './Component/Todo/TodoForm';
-
+import TodoList from './Component/Todo/TodoList';
 
 
 function App() {
@@ -10,8 +9,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Task />  
-      <TodoForm/>
-    <div class="background">
+      <div className='todo-app'>  
+      <TodoList />
+      </div>
+    
+    <div className="background">
    <span></span>
    <span></span>
    <span></span>

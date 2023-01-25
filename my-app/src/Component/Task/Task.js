@@ -18,7 +18,7 @@ function Task() {
   return (
     <div>
          {liste.map((tache,index)=>{
-          return(<h1 className='list'>{tache.tache} {tache.budget} </h1>)
+          return(<h1 className='list' key={tache.id} >{tache.tache} {tache.budget} </h1>)
          })}
     </div>
  
